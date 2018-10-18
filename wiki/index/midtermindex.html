@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Programming Paradigm</title>
+
+	<link rel="stylesheet" href="stylesheets/midterm.css">
+
+</head>
+<body>
+
+	<h1 id=title>Programming Paradigm</h1>
+	<hr>
+	
+<!--section 1: Intro, including a) in-line links that when clicked open in a new tab, b) bolding, italics, underlining, c) links styled differently when in different states-->
+	<div>
+	
+		<p><strong>Programming paradigms</strong> are a way to classify <a href= "https://en.wikipedia.org/wiki/Programming_language" target="_blank">programming languages</a> based on their features. Languages can be classified into multiple paradigms.</p>
+
+		<p>Some paradigms are concerned mainly with <i>implications</i> for the <a href= "https://en.wikipedia.org/wiki/Execution_model" target="_blank">execution model</a> of the language, such as allowing <a href= "https://en.wikipedia.org/wiki/Side_effect_(computer_science)" target="_blank">side effects</a>, or whether the sequence of operations is defined by the execution model. Other paradigms are concerned mainly with the way that code is <i>organized,</i> such as grouping a code into units along with the state that is modified by the code. Yet others are concerned mainly with the <i>style of syntax and grammar.</i></p>
+
+		<p>Common programming paradigms include:</p>
+			<ul>
+				<li><a href="https://en.wikipedia.org/wiki/Imperative_programming" target="_blank">Imperative</a> in which the programmer instructs the machine how to change its state,</li>
+				<li><a href="https://en.wikipedia.org/wiki/Procedural_programming">Procedural</a> which groups instructions into procedures,</li>
+				<li><a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank">Object-oriented</a> which groups instructions together with the part of the state they operate on,</li>
+				<li><a href="https://en.wikipedia.org/wiki/Declarative_programming" target="_blank">Declarative</a> in which the programmer merely declares properties of the desired result, but not how to compute it</li>
+				<li><a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank">Functional</a> in which the 	desired result is declared as the value of a series of function applications,</li>
+				<li><a href="https://en.wikipedia.org/wiki/Logic_programming" target="_blank">Logic</a> in which the desired 	result is declared as the answer to a question about a system of facts and rules,</li>
+				<li><a href="https://en.wikipedia.org/wiki/Mathematical_optimization" target="_blank">Mathematical</a> in which the desired result is declared as the solution of an optimization problem</li>
+			</ul>
+
+		<p><a href="https://en.wikipedia.org/wiki/Symbolic_programming" target="_blank">Symbolic techniques</a> such as <a href="https://en.wikipedia.org/wiki/Reflection_(computer_programming)" target="_blank">reflection</a>, which allow the program to refer to itself, might also be considered as a programming paradigm. However, this is compatible with the major paradigms and thus is not a real paradigm in its own right.</p>
+
+		<p>For example, languages that fall into the <u>imperative paradigm</u> have two main features: they state the order in which operations occur, with constructs that explicitly control that order, and they allow side effects, in which state can be modified at one point in time, within one unit of code, and then later read at a different point in time inside a different unit of code. The communication between the units of code is not explicit. Meanwhile, in <u>object-oriented programming,</u> code is organized into objects that contain state that is only modified by the code that is part of the object. Most object-oriented languages are also imperative languages. In contrast, languages that fit the <u>declarative paradigm</u> do not state the order in which to execute operations. Instead, they supply a number of operations that are available in the system, along with the conditions under which each is allowed to execute. The implementation of the language's execution model tracks which operations are free to execute and chooses the order on its own.</p>
+
+	</div>
+
+<!--section 2: Table of contents with links that go to different sections, ordered and unordered lists, background color and border-->
+	<div class="contents">
+		
+		<p id="contents">Contents</p>
+		<ol>
+			<li><a href="#Overview" target="_self">Overview</a></li>
+			<li><a href="#Criticism" target="_self">Criticism</a></li>
+			<li><a href="#History" target="_self">History</a></li>
+			<li><a href="#Furtherparadigms" target="_self">Further Paradigms</a></li>
+			<li><a href="#References" target="_self">References</a></li>
+		</ol>
+		
+	</div>
+
+<!--section 3: Body, including an h1 heading with decorative styling, different h2 headers within body, multiple blocks of text,  unordered list, photo with caption, all links styled differently depending on the state they're in-->
+	<div>
+		<hr>
+		<a name="Overview"></a>
+		<h1>Overview</h1>
+
+		<div class="pull-left img-container">
+			<img src="images/Programmingparadigms.png" alt="Overview of the various programming paradigms according to Peter Van Roy">
+			<p class="caption">Overview of the various programming paradigms according to Peter Van Roy</p>
+		</div>
+
+			<p>Just as <a href="Programming Paradigm" target="_blank">software engineering</a> (as a process) is defined by differing methodologies, so the <a href="https://en.wikipedia.org/wiki/Programming_language" target="_blank">programming languages</a> (as models of computation) are defined by differing paradigms. Some languages are designed to support one paradigm (Smalltalk supports object-oriented programming, Haskell supports functional programming), while other programming languages support multiple paradigms (such as Object Pascal, C++, Java, C#, Scala, Visual Basic, Common Lisp, Scheme, Perl, PHP, Python, Ruby, Oz, and F#). For example, programs written in C++, Object Pascal or PHP can be purely procedural, purely object-oriented, or can contain elements of both or other paradigms. Software designers and programmers decide how to use those paradigm elements.</p>
+
+			<p>In object-oriented programming, programs are treated as a set of interacting objects. In functional programming, programs are treated as a sequence of stateless function evaluations. When programming computers or systems with many processors, in process-oriented programming, programs are treated as sets of concurrent processes acting on logically shared data structures.</p>
+
+			<p>Many programming paradigms are as well known for the techniques they forbid as for those they enable. For instance, pure functional programming disallows use of side-effects, while structured programming disallows use of the goto statement. Partly for this reason, new paradigms are often regarded as doctrinaire or overly rigid by those accustomed to earlier styles.[6] Yet, avoiding certain techniques can make it easier to understand program behavior, and to prove theorems about program correctness.</p>
+
+			<p>Programming paradigms can also be compared with <a href="https://en.wikipedia.org/wiki/Programming_model" target="_blank">programming models</a> which allow invoking an execution model by using only an API. Programming models can also be classified into paradigms, based on features of the execution model.</p>
+
+			<p>For parallel computing, using a programming model instead of a language is common. The reason is that details of the parallel hardware leak into the abstractions used to program the hardware. This causes the programmer to have to map patterns in the algorithm onto patterns in the execution model (which have been inserted due to leakage of hardware into the abstraction). As a consequence, no one parallel programming language maps well to all computation problems. It is thus more convenient to use a base sequential language and insert API calls to parallel execution models, via a programming model. Such parallel programming models can be classified according to abstractions that reflect the hardware, such as shared memory, distributed memory with message passing, notions of place visible in the code, and so forth. These can be considered flavors of programming paradigm that apply to only parallel languages and programming models.</p>
+
+		<hr>
+		<a name="Criticism"></a>
+		<h1>Criticism</h1>
+	
+			<p>Some programming language researchers criticise the notion of paradigms as a classification of programming languages, e.g. Harper,[7] and Krishnamurthi.[8] They argue that many programming languages cannot be strictly classified into one paradigm, but rather include features from several paradigms. <a href="https://en.wikipedia.org/wiki/Comparison_of_multi-paradigm_programming_languages" target="_blank">See Comparison of multi-paradigm programming languages.</a></p>
+
+		<hr>
+		<a name="History"></a>
+		<h1 class="history">History</h1>
+		
+			<p>Different approaches to programming have developed over time, being identified as such either at the time or retrospectively. An early approach consciously identified as such is <a href="https://en.wikipedia.org/wiki/Structured_programming" target="_blank">structured programming,</a> advocated since the mid 1960s. The concept of a "programming paradigm" as such dates at least to 1978, in the Turing Award lecture of Robert W. Floyd, entitled The Paradigms of Programming, which cites the notion of paradigm as used by Thomas Kuhn in his The Structure of Scientific Revolutions (1962).[9]</p>
+		
+			<h2>Machine Code</h2>
+			
+				<p>The lowest-level programming paradigms are <a href="https://en.wikipedia.org/wiki/Machine_code" target="_blank">machine code,</a> which directly represents the instructions (the contents of program memory) as a sequence of numbers, and assembly language where the machine instructions are represented by mnemonics and memory addresses can be given symbolic labels. These are sometimes called first- and second-generation languages.</p>
+
+				<p>In the 1960s, assembly languages were developed to support library COPY and quite sophisticated conditional macro generation and preprocessing abilities, CALL to (subroutines), external variables and common sections (globals), enabling significant code re-use and isolation from hardware specifics via use of logical operators such as READ/WRITE/GET/PUT. Assembly was, and still is, used for time critical systems and often in embedded systems as it gives the most direct control of what the machine does.</p>
+
+			<h2>Procedural languages</h2>
+		
+				<p>The next advance was the development of procedural languages. These third-generation languages (the first described as high-level languages) use vocabulary related to the problem being solved. For example,</p>
+
+					<ul class="procedurallanguages">
+						<li>COmmon Business Oriented Language</li>
+						<li>FORmula TRANslation</li>
+						<li>ALGOrithmic Language</li>
+						<li>Programming Language One</li>
+						<li>Beginners All purpose Symbolic Instruction Code</li>
+						<li>C</li>
+					</ul>
+
+				<p>All these languages follow the procedural paradigm. That is, they describe, step by step, exactly the procedure that should, according to the particular programmer at least, be followed to solve a specific problem. The efficacy and efficiency of any such solution are both therefore entirely subjective and highly dependent on that programmer's experience, inventiveness, and ability.</p>
+
+		<h2>Object-oriented programming</h2>
+			
+			<p>Following the widespread use of procedural languages, object-oriented programming (OOP) languages were created, such as Simula, Smalltalk, C++, C#, Eiffel, PHP, and Java. In these languages, data and methods to manipulate it are kept as one unit called an object. With perfect encapsulation, one of the distinguishing features of OOP, the only way that another object or user would be able to access the data is via the object's methods. Thus, the inner workings of an object may be changed without affecting any code that uses the object. There is still some controversy raised by Alexander Stepanov, Richard Stallman[10] and other programmers, concerning the efficacy of the OOP paradigm versus the procedural paradigm. The need for every object to have associative methods leads some skeptics to associate OOP with software bloat; an attempt to resolve this dilemma came through polymorphism.</p>
+
+			<p>Because object-oriented programming is considered a paradigm, not a language, it is possible to create even an object-oriented assembler language. High Level Assembly (HLA) is an example of this that fully supports advanced data types and object-oriented assembly language programming – despite its early origins. Thus, differing programming paradigms can be seen rather like motivational memes of their advocates, rather than necessarily representing progress from one level to the next[citation needed]. Precise comparisons of the efficacy of competing paradigms are frequently made more difficult because of new and differing terminology applied to similar entities and processes together with numerous implementation distinctions across languages.</p>
+
+	</div>
+
+<!--section 4: Body, including an h1 heading with decorative styling, different h2 headers within body, multiple blocks of text,  unordered list, photo with caption, all links styled differently depending on the state they're in-->
+	<div>
+		
+	<hr>
+	<a name="Furtherparadigms"></a>
+	<h1>Further Paradigms</h1>
+	
+		<h2>Literate programming</h2>
+		
+		<div class="pull-right img-container">
+			<img src="images/literateprogramming.jpg" alt="Literate Programming by Donald Knuth is the seminal book on literate programming">
+			<p class="caption">Literate Programming by Donald Knuth is the seminal book on literate programming</p>
+		</div>
+		
+			<p><a href="https://en.wikipedia.org/wiki/Literate_programming" target="_blank">Literate programming,</a> as a form of imperative programming, structures programs as a human-centered web, as in a hypertext essay: documentation is integral to the program, and the program is structured following the logic of prose exposition, rather than compiler convenience.</p>
+
+		<h2>Declarative programming</h2>
+		
+			<p>Independent of the imperative branch, <a href="https://en.wikipedia.org/wiki/Declarative_programming" target="_blank">declarative programming paradigms</a> were developed. In these languages, the computer is told what the problem is, not how to solve the problem – the program is structured as a set of properties to find in the expected result, not as a procedure to follow. Given a database or a set of rules, the computer tries to find a solution matching all the desired properties. An archetype of a declarative language is the fourth generation language SQL, and the family of functional languages and logic programming.</p>
+
+		<h2>Functional programming</h2>
+		
+			<p><a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank">Functional programming </a> is a subset of declarative programming. Programs written using this paradigm use functions, blocks of code intended to behave like mathematical functions. Functional languages discourage changes in the value of variables through assignment, making a great deal of use of recursion instead.</p>
+
+		<h2>Logic programming</h2>
+		
+			<p>The <a href="https://en.wikipedia.org/wiki/Logic_programming" target="_blank">logic programming</a> paradigm views computation as automated reasoning over a body of knowledge. Facts about the problem domain are expressed as logic formulae, and programs are executed by applying inference rules over them until an answer to the problem is found, or the set of formulae is proved inconsistent.</p>
+
+		<h2>Symbolic programming</h2>
+		
+			<p><a href="https://en.wikipedia.org/wiki/Symbolic_programming" target="_blank">Symbolic programming</a> is a paradigm that describes programs able to manipulate formulas and program components as data.[3] Programs can thus effectively modify themselves, and appear to "learn", making them suited for applications such as artificial intelligence, expert systems, natural-language processing and computer games. Languages that support this paradigm include Lisp and Prolog.[11]</p>
+	
+
+	</div>
+
+<!--section 5: References, including an h1 heading with decorative styling, two side-by-side columns, each column will have 6 links that open in a new tab, ordered list form, all links styled differently depending on the state they're in-->
+	<div>
+		
+		<hr>
+		<a name="References"></a>
+		<h1>References</h1>
+
+		
+			<ol class="columns">
+				<li> Nørmark, Kurt. <a href="http://people.cs.aau.dk/~normark/prog3-03/html/notes/paradigms_themes-paradigm-overview-section.html" target="_blank">Overview of the four main programming paradigms.</a> Aalborg University, 9 May 2011. Retrieved 22 September 2012.</li>
+				<li>Frans Coenen (1999-10-11). <a href"http://cgi.csc.liv.ac.uk/~frans/OldLectures/2CS24/declarative.html#detail" target="_blank">Characteristics of declarative programming languages".</a> cgi.csc.liv.ac.uk. Retrieved 2014-02-20.</li>
+				<li>Michael A. Covington (2010-08-23). <a href="https://web.archive.org/web/20120307124013/http://www.ai.uga.edu/mc/LispNotes/FirstLectureOnSymbolicProgramming.pdf" target="_blank">CSCI/ARTI 4540/6540: First Lecture on Symbolic Programming and LISP"</a> (PDF). University of Georgia. Archived from the original (PDF) on 2012-03-07. Retrieved 2013-11-20.</li>
+				<li>Peter Van Roy (2009-05-12). <a href="https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf" target="_blank">Programming Paradigms for Dummies: What Every Programmer Should Know"</a> (PDF). info.ucl.ac.be. Retrieved 2014-01-27.</li>
+				<li>Peter Van-Roy; Seif Haridi (2004). <a href="https://books.google.com/books?id=_bmyEnUnfTsC" target="_blank">Concepts, Techniques, and Models of Computer Programming.</a> MIT Press. ISBN 978-0-262-22069-9.</li>
+				<li>Frank Rubin (March 1987). <a href="https://web.archive.org/web/20090320002214/http://www.ecn.purdue.edu/ParaMount/papers/rubin87goto.pdf" target="_blank">'GOTO Considered Harmful' Considered Harmful" </a>(PDF). Communications of the ACM. 30 (3): 195–196. doi:10.1145/214748.315722. Archived from the original (PDF) on March 20, 2009.</li>
+				<li>Harper, Robert. <a href="http://www.cambridgeblog.org/2017/05/what-if-anything-is-a-programming-paradigm/" target="_blank">What if anything is a programming-paradigm""</a>.</li>
+				<li>Krishnamurthi, Shriram (November 2008). <a href="https://dl.acm.org/citation.cfm?id=1480846" target="_blank">Teaching programming languages in a post-linnaean age".</a> SIGPLAN. ACM. pp. 81–83. Not. 43, 11.</li>
+				<li>Floyd, R. W. (1979). <a href="https://dl.acm.org/citation.cfm?id=1480846" target="_blank">The paradigms of programming".</a> Communications of the ACM. 22 (8): 455. doi:10.1145/359138.359140.</li>
+				<li><a href="https://groups.google.com/forum/?hl=en#!topic/comp.emacs.xemacs/0K8leig3ZAw" target="_blank">Mode inheritance, cloning, hooks & OOP</a> (Google Groups Discussion)".</li>
+				<li><a hre="https://www.allbusiness.com/barrons_dictionary/dictionary-symbolic-programming-4950308-1.html" target="_blank">Business glossary: Symbolic programming definition".</a> allbusiness.com. Retrieved 2014-07-30.</li>
+				<li><a href="https://web.archive.org/web/20130821052407/https://developer.mozilla.org/en-US/docs/multiparadigmlanguage.html" target="_blank">Multi-Paradigm Programming Language".</a> developer.mozilla.org. Mozilla Foundation. Archived from the original on 21 August 2013.</li>
+			</ol>
+		
+	</div>
+
+
+
+</body>
+</html>
